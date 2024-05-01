@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"></link>
+    <script defer src="javascript.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Mail App</title>
+</head>
+<body>
+    <div class="sidebar-menu">
+        <div class="sidebar-menu__top">
+            <i class='bx bx-menu'></i>
+            <span>📬 Mail APP</span>
+        </div>
+        <div class="sidebar-menu__compose">
+            <i class="bx bx-pencil"></i>
+            <span>Compose</span>
+        </div>
+        <div class="sidebar-menu__buttons">
+            <app-side-bar-button class="sidebar-menu_inbox" text="Inbox">
+                <slot slot="icon">📥</slot>
+                <span class="text"></span>
+            </app-side-bar-button>
+            <app-side-bar-button text="Starred">
+                <slot slot="icon">⭐️</slot>
+                <span class="text"></span>
+            </app-side-bar-button>
+            <app-side-bar-button text="Snoozed">
+                <slot slot="icon">⏱</slot>
+                <span class="text"></span>
+            </app-side-bar-button>
+            <app-side-bar-button text="Sent">
+                <slot slot="icon">➡️</slot>
+                <span class="text" ></span>
+            </app-side-bar-button>
+            <app-side-bar-button text="Draft" unreadCount="1">
+                <slot slot="icon">📄</slot>
+            </app-side-bar-button>
+        </div>
+    </div>
+</body>
+</html>
