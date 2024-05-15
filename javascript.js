@@ -46,14 +46,7 @@ class appSideBarButton extends HTMLElement {
         this.addEventListener("click", function() {
             (this.style = "font-weight: bold;")
         })
-
     }
-
-    disconnectedCallback() {
-
-
-    }
-
 }
 
 window.customElements.define("app-side-bar-button", appSideBarButton);
